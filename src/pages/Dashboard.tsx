@@ -24,6 +24,7 @@ import {
   Leaf,
   Activity,
   Sparkles,
+  ClipboardCheck,
 } from "lucide-react";
 import { BarChart, Bar, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell, Area, AreaChart } from "recharts";
 import { NotificationBell } from "@/components/NotificationBell";
@@ -202,6 +203,7 @@ const Dashboard = () => {
   };
 
   const coreTools: Tool[] = [
+    { label: "Farm Action Plan", icon: ClipboardCheck, path: "/action-plan", tone: "warning" },
     { label: "Soil Analyzer", icon: Sprout, path: "/soil-analyzer", tone: "primary" },
     { label: "Climate Alerts", icon: AlertTriangle, path: "/climate-alerts", tone: "warning" },
     { label: "AI Advisor", icon: MessageSquare, path: "/chatbot", tone: "accent" },
